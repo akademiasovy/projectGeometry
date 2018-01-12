@@ -1,9 +1,9 @@
-package sk.akademiasovy.geometry;
+package sk.akademiasovy.geometry2D;
 
 /**
  * Created by host on 11.1.2018.
  */
-public class Square {
+public class Square implements Operation, Diagonal {
 private double a;
 
     public double getA() {
@@ -22,10 +22,12 @@ private double a;
         a=0;
     }
 
+    @Override
     public double getArea(){
         return a*a;
     }
 
+    @Override
     public double getPerimeter(){
         return 4*a;
     }

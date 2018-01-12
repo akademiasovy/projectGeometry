@@ -1,7 +1,8 @@
 package sk.akademiasovy.main;
 
-import sk.akademiasovy.geometry.Rectangle;
-import sk.akademiasovy.geometry.Square;
+import sk.akademiasovy.geometry2D.Circle;
+import sk.akademiasovy.geometry2D.Rectangle;
+import sk.akademiasovy.geometry2D.Square;
 
 /**
  * Created by host on 11.1.2018.
@@ -20,5 +21,10 @@ public class Main {
         System.out.println("Area of rect1 is "+ rect1.getArea() );
         System.out.println("Perimeter of rect1 is "+ rect1.getPerimeter() );
         System.out.println("Diagonal's length of rect1 is "+ rect1.getDiagonal() );
+
+        Circle circle1=new Circle(12.5);
+        System.out.println("Perimeter of circle1 is "+ circle1.getPerimeter() );
+        System.out.println("Area of circle1 is "+ circle1.getArea() );
+
     }
 }

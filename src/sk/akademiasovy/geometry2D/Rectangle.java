@@ -1,9 +1,9 @@
-package sk.akademiasovy.geometry;
+package sk.akademiasovy.geometry2D;
 
 /**
  * Created by host on 11.1.2018.
  */
-public class Rectangle {
+public class Rectangle implements Operation, Diagonal{
     private double a;
     private double b;
 
@@ -21,10 +21,12 @@ public class Rectangle {
         a=b=0;
     }
 
+    @Override
     public double getArea(){
         return a*b;
     }
 
+    @Override
     public double getPerimeter(){
         return 2*(a+b);
     }
